@@ -225,13 +225,21 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
       }
     case 7:  // For loop: ( for (int i = 0; i >= 5; i++) {} )
       {
-        Keyboard.print("for");       // for
+        Keyboard.print("f");         // for
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // for
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("r");         // for
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print(" ");         // blank
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print("(");         // bracket
         delay(DEFAULTWAITVALUE);     // Wait
-        Keyboard.print("int");       // int
+        Keyboard.print("i");         // int
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // int
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // int
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print(" ");         // blank
         delay(DEFAULTWAITVALUE);     // Wait
@@ -378,92 +386,162 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
       }
     case 9:  // Do While loop: ( do { // some actions } while (condition); )
       {
-        Keyboard.print("do");         // do
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("{");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        Keyboard.write(47);           // /
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.write(47);           // /
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("some");       // some
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("actions");    // actions
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("}");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("while");      // while
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("(");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("condition");  // condition
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(")");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.write(59);           // ;
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
+        Keyboard.print("d");         // do
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // do
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("{");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        Keyboard.write(47);          // /
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.write(47);          // /
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("s");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("m");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("e");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("a");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("c");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("s");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("}");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("while");     // while
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("(");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("c");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("d");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(")");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.write(59);          // ;
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
         break;
       }
     case 10:  // While loop: ( while (condition) { // some actions } )
       {
-        Keyboard.print("while");      // while
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("(");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("condition");  // condition
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(")");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("{");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        Keyboard.write(47);           // /
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.write(47);           // /
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("some");       // do
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("actions");    // do
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("}");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
+        Keyboard.print("while");     // while
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("(");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("c");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("d");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // condition
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(")");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("{");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        Keyboard.write(47);          // /
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.write(47);          // /
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("s");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("m");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("e");         // some
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("a");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("c");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("s");         // actions
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("}");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
         break;
       }
     case 11:  // Void ( void functionname() {} )
@@ -503,7 +581,19 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
         delay(DEFAULTWAITVALUE);           // Wait
         Keyboard.print(" ");               // blank
         delay(DEFAULTWAITVALUE);           // Wait
-        Keyboard.print("myarray");         // array name
+        Keyboard.print("m");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("y");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("a");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("r");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("r");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("a");               // array name
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("y");               // array name
         delay(DEFAULTWAITVALUE);           // Wait
         Keyboard.write(91);                // [
         delay(DEFAULTWAITVALUE);           // Wait
