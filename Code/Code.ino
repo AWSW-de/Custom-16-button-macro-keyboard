@@ -550,9 +550,29 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print(" ");         // blank
         delay(DEFAULTWAITVALUE);     // Wait
-        Keyboard.print("function");  // function
+        Keyboard.print("f");         // function
         delay(DEFAULTWAITVALUE);     // Wait
-        Keyboard.print("name");      // name
+        Keyboard.print("u");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("c");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("t");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("i");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("o");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // function
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("n");         // name
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("a");         // name
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("m");         // name
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("e");         // name
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print("(");         // bracket
         delay(DEFAULTWAITVALUE);     // Wait
@@ -577,7 +597,11 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
       }
     case 12:  // Array ( int myarray[] = { 1, 2, 3 }; )
       {
-        Keyboard.print("int");             // int
+        Keyboard.print("i");               // int
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("n");               // int
+        delay(DEFAULTWAITVALUE);           // Wait
+        Keyboard.print("t");               // int
         delay(DEFAULTWAITVALUE);           // Wait
         Keyboard.print(" ");               // blank
         delay(DEFAULTWAITVALUE);           // Wait
