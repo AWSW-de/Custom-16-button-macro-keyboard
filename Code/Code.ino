@@ -9,22 +9,26 @@
 // #
 // ###########################################################################################################################################
 
+
 // ###########################################################################################################################################
 // # Includes:
 // #
 // # You will need to add the following libraries to your Arduino IDE to use the project:
-// # - ezButtons                ArduinoGetStarted    (V1.0.6)           https://arduinogetstarted.com/tutorials/arduino-button-library
+// # - ezButton                ArduinoGetStarted    (V1.0.6)           https://arduinogetstarted.com/tutorials/arduino-button-library
 // #
 // ###########################################################################################################################################
+
 
 // ###########################################################################################################################################
 // Version: V1.0.0 - 15.12.2024
 // ###########################################################################################################################################
 
+
 // ###########################################################################################################################################
-#include <ezButton.h>  // EZ-Button library
+#include <ezButton.h>  // ezButton library >>> https://arduinogetstarted.com/tutorials/arduino-button-library
 #include <Keyboard.h>  // Arduino default library
 // ###########################################################################################################################################
+
 
 // ###########################################################################################################################################
 // By the Arduino keyboard library supported keyboard layouts set in the void_setup startup function:
@@ -39,26 +43,28 @@
 //  KeyboardLayout_hu_HU
 // ###########################################################################################################################################
 
+
 // ###########################################################################################################################################
-const int BUTTON_NUM = 16;        // Amount of keyboard switches in this button array
-const int DEFAULTWAITVALUE = 75;  // Default wait value after each key press to give the computer the time to react to the received command
-const int BUTTON_01_PIN = 2;      // Keyboard switch 1 (upper left from the front view)
-const int BUTTON_02_PIN = 3;      // Keyboard switch 2
-const int BUTTON_03_PIN = 4;      // Keyboard switch 3
-const int BUTTON_04_PIN = 5;      // Keyboard switch 4
-const int BUTTON_05_PIN = 6;      // Keyboard switch 5
-const int BUTTON_06_PIN = 7;      // Keyboard switch 6
-const int BUTTON_07_PIN = 8;      // Keyboard switch 7
-const int BUTTON_08_PIN = 9;      // Keyboard switch 8
-const int BUTTON_09_PIN = 10;     // Keyboard switch 9
-const int BUTTON_10_PIN = 16;     // Keyboard switch 10
-const int BUTTON_11_PIN = 14;     // Keyboard switch 11
-const int BUTTON_12_PIN = 15;     // Keyboard switch 12
-const int BUTTON_13_PIN = A0;     // Keyboard switch 13
-const int BUTTON_14_PIN = A1;     // Keyboard switch 14
-const int BUTTON_15_PIN = A2;     // Keyboard switch 15
-const int BUTTON_16_PIN = A3;     // Keyboard switch 16
+const int BUTTON_NUM = 16;         // Amount of keyboard switches in this button array
+const int DEFAULTWAITVALUE = 100;  // Default wait value after each key press to give the computer the time to react to the received command
+const int BUTTON_01_PIN = 2;       // Keyboard switch 1 (upper left from the front view)
+const int BUTTON_02_PIN = 3;       // Keyboard switch 2
+const int BUTTON_03_PIN = 4;       // Keyboard switch 3
+const int BUTTON_04_PIN = 5;       // Keyboard switch 4
+const int BUTTON_05_PIN = 6;       // Keyboard switch 5
+const int BUTTON_06_PIN = 7;       // Keyboard switch 6
+const int BUTTON_07_PIN = 8;       // Keyboard switch 7
+const int BUTTON_08_PIN = 9;       // Keyboard switch 8
+const int BUTTON_09_PIN = 10;      // Keyboard switch 9
+const int BUTTON_10_PIN = 16;      // Keyboard switch 10
+const int BUTTON_11_PIN = 14;      // Keyboard switch 11
+const int BUTTON_12_PIN = 15;      // Keyboard switch 12
+const int BUTTON_13_PIN = A0;      // Keyboard switch 13
+const int BUTTON_14_PIN = A1;      // Keyboard switch 14
+const int BUTTON_15_PIN = A2;      // Keyboard switch 15
+const int BUTTON_16_PIN = A3;      // Keyboard switch 16
 // ###########################################################################################################################################
+
 
 // ###########################################################################################################################################
 ezButton buttonArray[] = {  // Create the button array
@@ -81,6 +87,7 @@ ezButton buttonArray[] = {  // Create the button array
 };
 // ###########################################################################################################################################
 
+
 // ###########################################################################################################################################
 void setup() {                             // Startup function
   Serial.begin(115200);                    // Init serial monitor
@@ -90,6 +97,7 @@ void setup() {                             // Startup function
   }
 }
 // ###########################################################################################################################################
+
 
 // ###########################################################################################################################################
 void loop() {                                                   // Runtime function
@@ -110,6 +118,7 @@ void loop() {                                                   // Runtime funct
 }
 // ###########################################################################################################################################
 
+
 // ###########################################################################################################################################
 // Command references for the keyboard commands:
 // #############################################
@@ -117,6 +126,7 @@ void loop() {                                                   // Runtime funct
 // Keyboard modifiers: https://reference.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/
 // Ascii code numbers: https://docs.arduino.cc/built-in-examples/communication/ASCIITable/ >>> https://www.asciitable.com/
 // ###########################################################################################################################################
+
 
 // ###########################################################################################################################################
 void button_action(int pressedbuttonnumber) {  // Button actions function with the send keyboard acions for each keyboard swith:
@@ -155,39 +165,39 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
       }
     case 5:  // If: ( if (variable1 == variable2) {} )
       {
-        Keyboard.print("if");         // if
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("(");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("variable1");  // text
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.write(61);           // =
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.write(61);           // =
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("variable2");  // text
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(")");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print(" ");          // blank
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.print("{");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        Keyboard.press(KEY_RETURN);   // enter
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release all keys
-        Keyboard.print("}");          // bracket
-        delay(DEFAULTWAITVALUE);      // Wait
-        Keyboard.releaseAll();        // Release the Enter key
+        Keyboard.print("if");        // if
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("(");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("var1");      // text
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.write(61);          // =
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.write(61);          // =
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("var2");      // text
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(")");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print(" ");         // blank
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.print("{");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        Keyboard.press(KEY_RETURN);  // enter
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release all keys
+        Keyboard.print("}");         // bracket
+        delay(DEFAULTWAITVALUE);     // Wait
+        Keyboard.releaseAll();       // Release the Enter key
         break;
       }
     case 6:  // Else: ( else {} )
@@ -243,7 +253,7 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.print(" ");         // blank
         delay(DEFAULTWAITVALUE);     // Wait
-        Keyboard.write(62);          // >
+        Keyboard.write(60);          // <
         delay(DEFAULTWAITVALUE);     // Wait
         Keyboard.write(61);          // =
         delay(DEFAULTWAITVALUE);     // Wait
