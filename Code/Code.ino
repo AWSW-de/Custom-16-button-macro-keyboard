@@ -292,13 +292,27 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
       }
     case 8:  // Switch: ( switch case with 5 int values )
       {
-        Keyboard.print("switch");       // switch
+        Keyboard.print("s");            // switch
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("w");            // switch
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("i");            // switch
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("t");            // switch
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("c");            // switch
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("h");            // switch
         delay(DEFAULTWAITVALUE);        // Wait
         Keyboard.print(" ");            // blank
         delay(DEFAULTWAITVALUE);        // Wait
         Keyboard.print("(");            // bracket
         delay(DEFAULTWAITVALUE);        // Wait
-        Keyboard.print("var");          // switch variable
+        Keyboard.print("v");            // switch variable
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("a");            // switch variable
+        delay(DEFAULTWAITVALUE);        // Wait
+        Keyboard.print("r");            // switch variable
         delay(DEFAULTWAITVALUE);        // Wait
         Keyboard.print(")");            // bracket
         delay(DEFAULTWAITVALUE);        // Wait
@@ -310,7 +324,13 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
         delay(DEFAULTWAITVALUE);        // Wait
         Keyboard.releaseAll();          // Release all keys
         for (int i = 1; i <= 5; i++) {  // Repeat actions 5 times
-          Keyboard.print("case");       // case
+          Keyboard.print("c");          // case
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("a");          // case
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("s");          // case
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("e");          // case
           delay(DEFAULTWAITVALUE);      // Wait
           Keyboard.print(" ");          // blank
           delay(DEFAULTWAITVALUE);      // Wait
@@ -328,7 +348,15 @@ void button_action(int pressedbuttonnumber) {  // Button actions function with t
           Keyboard.press(KEY_RETURN);   // enter
           delay(DEFAULTWAITVALUE);      // Wait
           Keyboard.releaseAll();        // Release all keys
-          Keyboard.print("break");      // break
+          Keyboard.print("b");          // break
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("r");          // break
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("e");          // break
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("a");          // break
+          delay(DEFAULTWAITVALUE);      // Wait
+          Keyboard.print("k");          // break
           delay(DEFAULTWAITVALUE);      // Wait
           Keyboard.write(59);           // ;
           delay(DEFAULTWAITVALUE);      // Wait
